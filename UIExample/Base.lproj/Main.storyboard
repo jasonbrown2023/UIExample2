@@ -98,11 +98,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-rs-bl7">
-                                <rect key="frame" x="68" y="493" width="62" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-rs-bl7">
+                                <rect key="frame" x="66" y="356" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                <buttonConfiguration key="configuration" style="plain" title="Start" titleAlignment="automatic">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                     </backgroundConfiguration>
@@ -111,11 +110,10 @@
                                     <action selector="startButton:" destination="FKB-hL-ae5" eventType="touchUpInside" id="2Hx-N5-hMf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiN-LM-gf8">
-                                <rect key="frame" x="242" y="493" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiN-LM-gf8">
+                                <rect key="frame" x="240" y="356" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stop">
+                                <buttonConfiguration key="configuration" style="plain" title="Stop" titleAlignment="automatic">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                     </backgroundConfiguration>
@@ -124,9 +122,8 @@
                                     <action selector="stopButton:" destination="FKB-hL-ae5" eventType="touchUpInside" id="U5V-EO-2X4"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="5" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="Yd8-3P-hCC">
-                                <rect key="frame" x="42" y="367" width="286" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="5" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="Yd8-3P-hCC">
+                                <rect key="frame" x="42" y="271" width="286" height="31"/>
                                 <connections>
                                     <action selector="time_slider:" destination="FKB-hL-ae5" eventType="valueChanged" id="v2q-HS-nOG"/>
                                 </connections>
@@ -144,8 +141,8 @@
                                     <action selector="segCtrl:" destination="FKB-hL-ae5" eventType="valueChanged" id="wfc-hZ-dcC"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10 seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHl-Q1-EaA">
-                                <rect key="frame" x="44" y="212" width="282" height="114"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHl-Q1-EaA">
+                                <rect key="frame" x="93" y="172" width="185" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
@@ -154,14 +151,21 @@
                         <viewLayoutGuide key="safeArea" id="yAU-db-D2g"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="DiN-LM-gf8" secondAttribute="trailing" constant="91" id="0It-Xn-P6M"/>
                             <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="tc7-Z6-AP2" secondAttribute="trailing" constant="131" id="ApG-Qx-CcM"/>
-                            <constraint firstItem="zHl-Q1-EaA" firstAttribute="leading" secondItem="yAU-db-D2g" secondAttribute="leading" constant="80" id="Aye-iV-ucl"/>
                             <constraint firstItem="tc7-Z6-AP2" firstAttribute="leading" secondItem="yAU-db-D2g" secondAttribute="leading" constant="131" id="BLS-cr-129"/>
-                            <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="zHl-Q1-EaA" secondAttribute="trailing" id="Cdf-ye-bnZ"/>
                             <constraint firstItem="tc7-Z6-AP2" firstAttribute="top" secondItem="yAU-db-D2g" secondAttribute="top" id="Jty-kf-zSY"/>
-                            <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="zHl-Q1-EaA" secondAttribute="trailing" constant="128" id="Kft-jV-zgf"/>
-                            <constraint firstItem="zHl-Q1-EaA" firstAttribute="top" secondItem="yAU-db-D2g" secondAttribute="top" constant="151" id="PBA-iZ-OZ1"/>
-                            <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="zHl-Q1-EaA" secondAttribute="trailing" constant="128" id="QE9-eL-z7e"/>
+                            <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="zHl-Q1-EaA" secondAttribute="trailing" constant="115" id="NjW-Id-VHl"/>
+                            <constraint firstItem="eGN-rs-bl7" firstAttribute="leading" secondItem="yAU-db-D2g" secondAttribute="leading" constant="66" id="VPP-bT-STQ"/>
+                            <constraint firstItem="DiN-LM-gf8" firstAttribute="leading" secondItem="eGN-rs-bl7" secondAttribute="trailing" constant="112" id="WYg-Ew-6cQ"/>
+                            <constraint firstItem="DiN-LM-gf8" firstAttribute="leading" secondItem="eGN-rs-bl7" secondAttribute="trailing" constant="112" id="YC5-AC-GSV"/>
+                            <constraint firstItem="DiN-LM-gf8" firstAttribute="top" secondItem="Yd8-3P-hCC" secondAttribute="bottom" constant="55" id="ctW-En-A4c"/>
+                            <constraint firstItem="yAU-db-D2g" firstAttribute="trailing" secondItem="Yd8-3P-hCC" secondAttribute="trailing" constant="67" id="cyj-Oy-ecT"/>
+                            <constraint firstItem="Yd8-3P-hCC" firstAttribute="leading" secondItem="yAU-db-D2g" secondAttribute="leading" constant="44" id="frX-TB-Ylf"/>
+                            <constraint firstItem="Yd8-3P-hCC" firstAttribute="top" secondItem="zHl-Q1-EaA" secondAttribute="bottom" constant="45" id="jaa-1a-Tgc"/>
+                            <constraint firstItem="eGN-rs-bl7" firstAttribute="top" secondItem="Yd8-3P-hCC" secondAttribute="bottom" constant="55" id="je8-RZ-PTx"/>
+                            <constraint firstItem="zHl-Q1-EaA" firstAttribute="top" secondItem="tc7-Z6-AP2" secondAttribute="bottom" constant="38" id="kZe-f3-2Zb"/>
+                            <constraint firstItem="zHl-Q1-EaA" firstAttribute="leading" secondItem="yAU-db-D2g" secondAttribute="leading" constant="93" id="lgO-bA-xqM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v56-h4-htl"/>

@@ -68,19 +68,19 @@ class CollectViewController: UIViewController, UITableViewDataSource, UITableVie
             return view.frame.size.width/2
         }
         
-        
 
     }
 
 extension CollectViewController: CollectionTableViewCellDelegate{
     func collectionTableViewCellDidTapItem(with viewModel: TileCollectionViewCellViewModel) {
         let alert = UIAlertController(title: viewModel.name,
-                                          message: "You successfully selected an Item",
-                                          preferredStyle: .alert)
-            
+                                      message: "You successfully selected an Item:",
+                                      preferredStyle: .alert)
+        
+        
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
         
         present(alert, animated: true)
-        }
-        
+    }
 }
+
