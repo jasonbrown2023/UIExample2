@@ -79,6 +79,26 @@
                                     <segue destination="FKB-hL-ae5" kind="show" id="pvm-Qg-lqw"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickerCell" textLabel="VSR-Nx-SL0" style="IBUITableViewCellStyleDefault" id="7rt-SN-6mz">
+                                <rect key="frame" x="0.0" y="181.00000381469727" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="7rt-SN-6mz" id="xsy-nL-NEY">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VSR-Nx-SL0">
+                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wUo-E9-Wpa" kind="show" id="Hcl-5n-4T7"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="BOE-2e-iFn" id="C68-ie-e8H"/>
@@ -90,6 +110,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4j-Rr-6P8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-605.3435114503817" y="29.577464788732396"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="Nuk-wu-6ew">
+            <objects>
+                <viewController id="wUo-E9-Wpa" customClass="PickerViewController" customModule="UIExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ha4-xX-SO6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-HJ-PaD">
+                                <rect key="frame" x="61" y="103" width="259" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeT-0b-eHg">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.33333333333333" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="externaldrive.badge.exclamationmark" catalog="system" title="WHITE"/>
+                                        <connections>
+                                            <action selector="pickerViewButton:" destination="wUo-E9-Wpa" eventType="touchUpInside" id="cZs-4G-gVq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90L-0R-jj2">
+                                        <rect key="frame" x="211.33333333333331" y="0.0" width="47.666666666666686" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                                        <connections>
+                                            <action selector="pickerViewButton:" destination="wUo-E9-Wpa" eventType="touchUpInside" id="3Ru-gN-EU8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9oW-vs-y5T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hbS-HJ-PaD" firstAttribute="top" secondItem="9oW-vs-y5T" secondAttribute="top" id="OEK-X4-NaV"/>
+                            <constraint firstItem="hbS-HJ-PaD" firstAttribute="leading" secondItem="9oW-vs-y5T" secondAttribute="leading" constant="61" id="UWF-zb-889"/>
+                            <constraint firstItem="9oW-vs-y5T" firstAttribute="bottom" secondItem="hbS-HJ-PaD" secondAttribute="bottom" constant="680.66999999999996" id="f0W-8u-grH"/>
+                            <constraint firstItem="9oW-vs-y5T" firstAttribute="trailing" secondItem="hbS-HJ-PaD" secondAttribute="trailing" constant="73" id="udV-i8-6uq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8cd-2x-9pa"/>
+                    <connections>
+                        <outlet property="pickerViewButton" destination="SeT-0b-eHg" id="gyp-xh-NRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56o-m4-Smj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1848.0916030534349" y="766.90140845070425"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="Lfa-wS-Qhd">
@@ -380,11 +454,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="externaldrive.badge.exclamationmark" catalog="system" width="128" height="91"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -25,7 +25,7 @@ class MainTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 4
     }
 
     
@@ -51,12 +51,21 @@ class MainTableViewController: UITableViewController {
             
             return cell
             
-        }else{
+        }else if indexPath.section == 2{
        
             let cell = tableView.dequeueReusableCell(withIdentifier: "TimerCell", for: indexPath)
             cell.textLabel?.text = "Timer with Segmented Control"
             return cell
         }
+        else {
+       
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PickerCell", for: indexPath)
+            cell.textLabel?.text = "PickerView"
+            return cell
+        }
+        
+        
+        
         
     }
         
