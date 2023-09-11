@@ -33,15 +33,23 @@ class CollectViewController: UIViewController, UITableViewDataSource, UITableVie
             ]
         )
         ]
+    
+    
+    let data = ["Apple", "Google", "NVidia", "Intel", "Facebook", "Microsoft"]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
+        
+        
         // Do any additional setup after loading the view.
     }
         
+    @IBOutlet weak var pickerView: UIPickerView!
     override func viewDidLayoutSubviews(){
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
@@ -83,4 +91,7 @@ extension CollectViewController: CollectionTableViewCellDelegate{
         present(alert, animated: true)
     }
 }
+    
+
+
 

@@ -10,6 +10,9 @@
 		1757CE8E2AAE4C8500273D7E /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE8D2AAE4C8500273D7E /* CollectionTableViewCell.swift */; };
 		1757CE902AAE4CAF00273D7E /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE8F2AAE4CAF00273D7E /* TileCollectionViewCell.swift */; };
 		1757CE922AAE4DB300273D7E /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE912AAE4DB300273D7E /* CollectViewController.swift */; };
+		1757CE982AAE916900273D7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE972AAE916800273D7E /* TableViewController.swift */; };
+		1757CE9A2AAE918700273D7E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE992AAE918700273D7E /* CollectionViewCell.swift */; };
+		1757CE9C2AAE91A700273D7E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE9B2AAE91A600273D7E /* CollectionViewController.swift */; };
 		175DD7A02AA5090500A5D782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD79F2AA5090500A5D782 /* AppDelegate.swift */; };
 		175DD7A22AA5090500A5D782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7A12AA5090500A5D782 /* SceneDelegate.swift */; };
 		175DD7A42AA5090500A5D782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7A32AA5090500A5D782 /* ViewController.swift */; };
@@ -17,7 +20,7 @@
 		175DD7A92AA5090B00A5D782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175DD7A82AA5090B00A5D782 /* Assets.xcassets */; };
 		175DD7AC2AA5090B00A5D782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175DD7AA2AA5090B00A5D782 /* LaunchScreen.storyboard */; };
 		175DD7B62AA5165100A5D782 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7B52AA5165100A5D782 /* ImageModel.m */; };
-		175DD7B82AA52BBD00A5D782 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7B72AA52BBD00A5D782 /* TableViewController.swift */; };
+		175DD7B82AA52BBD00A5D782 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7B72AA52BBD00A5D782 /* MainTableViewController.swift */; };
 		175DD7C02AA6868900A5D782 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7BF2AA6868900A5D782 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		1757CE8D2AAE4C8500273D7E /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		1757CE8F2AAE4CAF00273D7E /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
 		1757CE912AAE4DB300273D7E /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
+		1757CE972AAE916800273D7E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1757CE992AAE918700273D7E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1757CE9B2AAE91A600273D7E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = "../../Demo/UIExample copy/UIExample/UIExample/CollectionViewController.swift"; sourceTree = "<group>"; };
 		175DD79C2AA5090500A5D782 /* UIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175DD79F2AA5090500A5D782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175DD7A12AA5090500A5D782 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +42,7 @@
 		175DD7B32AA5165000A5D782 /* UIExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		175DD7B42AA5165100A5D782 /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		175DD7B52AA5165100A5D782 /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
-		175DD7B72AA52BBD00A5D782 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		175DD7B72AA52BBD00A5D782 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		175DD7BF2AA6868900A5D782 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,9 @@
 		175DD79E2AA5090500A5D782 /* UIExample */ = {
 			isa = PBXGroup;
 			children = (
+				1757CE9B2AAE91A600273D7E /* CollectionViewController.swift */,
+				1757CE992AAE918700273D7E /* CollectionViewCell.swift */,
+				1757CE972AAE916800273D7E /* TableViewController.swift */,
 				1757CE8F2AAE4CAF00273D7E /* TileCollectionViewCell.swift */,
 				1757CE8D2AAE4C8500273D7E /* CollectionTableViewCell.swift */,
 				175DD79F2AA5090500A5D782 /* AppDelegate.swift */,
@@ -79,7 +88,7 @@
 				175DD7B52AA5165100A5D782 /* ImageModel.m */,
 				175DD7A52AA5090500A5D782 /* Main.storyboard */,
 				175DD7BF2AA6868900A5D782 /* TimerViewController.swift */,
-				175DD7B72AA52BBD00A5D782 /* TableViewController.swift */,
+				175DD7B72AA52BBD00A5D782 /* MainTableViewController.swift */,
 				175DD7A82AA5090B00A5D782 /* Assets.xcassets */,
 				175DD7AA2AA5090B00A5D782 /* LaunchScreen.storyboard */,
 				175DD7AD2AA5090B00A5D782 /* Info.plist */,
@@ -161,15 +170,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1757CE9C2AAE91A700273D7E /* CollectionViewController.swift in Sources */,
 				175DD7A42AA5090500A5D782 /* ViewController.swift in Sources */,
 				175DD7A02AA5090500A5D782 /* AppDelegate.swift in Sources */,
 				175DD7C02AA6868900A5D782 /* TimerViewController.swift in Sources */,
+				1757CE982AAE916900273D7E /* TableViewController.swift in Sources */,
 				175DD7A22AA5090500A5D782 /* SceneDelegate.swift in Sources */,
 				1757CE902AAE4CAF00273D7E /* TileCollectionViewCell.swift in Sources */,
 				1757CE922AAE4DB300273D7E /* CollectViewController.swift in Sources */,
-				175DD7B82AA52BBD00A5D782 /* TableViewController.swift in Sources */,
+				175DD7B82AA52BBD00A5D782 /* MainTableViewController.swift in Sources */,
 				1757CE8E2AAE4C8500273D7E /* CollectionTableViewCell.swift in Sources */,
 				175DD7B62AA5165100A5D782 /* ImageModel.m in Sources */,
+				1757CE9A2AAE918700273D7E /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

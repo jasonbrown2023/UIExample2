@@ -28,19 +28,19 @@
 }
 
 -(NSArray*) imageNames{
-    _imageNames = @[@"dads lawn", @"lizard", @"me", @"meandricky", @"miaddadralphie", @"tiffany"];
+    _imageNames = @[@"footprint", @"heartsandsand", @"praa_sands", @"sanddunes1", @"white_sands", @"whitesands2"];
     
     return _imageNames;
 }
 
 -(NSDictionary*) imageNameDict{
     if(!_imageNameDict)
-        _imageNameDict = @{@"dads lawn": [UIImage imageNamed:@"dads lawn"],
-                           @"lizard": [UIImage imageNamed:@"lizard"],
-                           @"me": [UIImage imageNamed:@"me"],
-                           @"meandricky": [UIImage imageNamed:@"meandricky"],
-                           @"miaddadralphie": [UIImage imageNamed:@"miadadralphie"],
-                           @"tiffany": [UIImage imageNamed:@"tiffany"]
+        _imageNameDict = @{@"footprint": [UIImage imageNamed:@"footprint"],
+                           @"heartsandsand": [UIImage imageNamed:@"heartsandsand"],
+                           @"praa_sands": [UIImage imageNamed:@"praa_sands"],
+                           @"sanddunes1": [UIImage imageNamed:@"sanddunes1"],
+                           @"white_sands": [UIImage imageNamed:@"white_sands"],
+                           @"whitesands2": [UIImage imageNamed:@"whitesands2"]
                            
         };
     return _imageNameDict;

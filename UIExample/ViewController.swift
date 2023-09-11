@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController , UIScrollViewDelegate{
-
+    var fitMode: UIView.ContentMode = .scaleAspectFit
+    
     lazy var imageModel = {
         return ImageModel.sharedInstance()
     }()
@@ -37,6 +38,8 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             self.scrollView.contentSize = size
             self.scrollView.minimumZoomScale = 0.1
             self.scrollView.delegate = self
+            
+            
             
         }
             

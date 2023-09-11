@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class MainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,38 +28,34 @@ class TableViewController: UITableViewController {
         return 3
     }
 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        /*
         if section == 0 {
             return self.imageModel.numberOfImages()
         }
+         */
         return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageNameCell", for: indexPath)
-            
-            // Configure the cell...
-            if let name = imageModel.getImageName(for: indexPath.row) as? String{
-                cell.textLabel!.text = name
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageModelCell", for: indexPath)
+            cell.textLabel!.text = "Scrollable Image Views"
+            return cell
+        } else
+        if indexPath.section == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CollectCell", for: indexPath)
+            cell.textLabel?.text = "Collection View Carousel"
+            //cell.detailTextLabel?.text = "Summary"
             
             return cell
-        }
-        else if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionCell", for: indexPath)
-            cell.textLabel?.text = "All Image"
-            cell.detailTextLabel?.text = "Summary"
             
-            return cell
-   
         }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionCell", for: indexPath)
-            cell.textLabel?.text = "All Image"
-            cell.detailTextLabel?.text = "Summary"
-            
+       
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TimerCell", for: indexPath)
+            cell.textLabel?.text = "Timer with Segmented Control"
             return cell
-   
         }
         
     }
