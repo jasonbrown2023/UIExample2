@@ -12,7 +12,6 @@
 		1757CE922AAE4DB300273D7E /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE912AAE4DB300273D7E /* CollectViewController.swift */; };
 		1757CE982AAE916900273D7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE972AAE916800273D7E /* TableViewController.swift */; };
 		1757CE9A2AAE918700273D7E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE992AAE918700273D7E /* CollectionViewCell.swift */; };
-		1757CE9C2AAE91A700273D7E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757CE9B2AAE91A600273D7E /* CollectionViewController.swift */; };
 		175BF0CC2AAEB4C20013ABA6 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BF0CB2AAEB4C20013ABA6 /* PickerViewController.swift */; };
 		175DD7A02AA5090500A5D782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD79F2AA5090500A5D782 /* AppDelegate.swift */; };
 		175DD7A22AA5090500A5D782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7A12AA5090500A5D782 /* SceneDelegate.swift */; };
@@ -23,6 +22,9 @@
 		175DD7B62AA5165100A5D782 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7B52AA5165100A5D782 /* ImageModel.m */; };
 		175DD7B82AA52BBD00A5D782 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7B72AA52BBD00A5D782 /* MainTableViewController.swift */; };
 		175DD7C02AA6868900A5D782 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DD7BF2AA6868900A5D782 /* TimerViewController.swift */; };
+		D1A9A9392AB0AB1900C6A816 /* SwitchStepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9A9382AB0AB1900C6A816 /* SwitchStepController.swift */; };
+		D1D1E7FB2AB005B500D3B212 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1E7FA2AB005B500D3B212 /* CollectionViewController.swift */; };
+		D1D1E7FE2AB0094200D3B212 /* NumberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D1E7FD2AB0094200D3B212 /* NumberModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,6 @@
 		1757CE912AAE4DB300273D7E /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
 		1757CE972AAE916800273D7E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1757CE992AAE918700273D7E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		1757CE9B2AAE91A600273D7E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = "../../Demo/UIExample copy/UIExample/UIExample/CollectionViewController.swift"; sourceTree = "<group>"; };
 		175BF0CB2AAEB4C20013ABA6 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		175DD79C2AA5090500A5D782 /* UIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175DD79F2AA5090500A5D782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +47,10 @@
 		175DD7B52AA5165100A5D782 /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		175DD7B72AA52BBD00A5D782 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		175DD7BF2AA6868900A5D782 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		D1A9A9382AB0AB1900C6A816 /* SwitchStepController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStepController.swift; sourceTree = "<group>"; };
+		D1D1E7FA2AB005B500D3B212 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D1D1E7FC2AB0094200D3B212 /* NumberModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberModel.h; sourceTree = "<group>"; };
+		D1D1E7FD2AB0094200D3B212 /* NumberModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 		175DD7932AA5090400A5D782 = {
 			isa = PBXGroup;
 			children = (
+				D1A9A9382AB0AB1900C6A816 /* SwitchStepController.swift */,
 				175DD79E2AA5090500A5D782 /* UIExample */,
 				175DD79D2AA5090500A5D782 /* Products */,
 			);
@@ -78,7 +84,7 @@
 		175DD79E2AA5090500A5D782 /* UIExample */ = {
 			isa = PBXGroup;
 			children = (
-				1757CE9B2AAE91A600273D7E /* CollectionViewController.swift */,
+				D1D1E7FA2AB005B500D3B212 /* CollectionViewController.swift */,
 				1757CE992AAE918700273D7E /* CollectionViewCell.swift */,
 				1757CE972AAE916800273D7E /* TableViewController.swift */,
 				1757CE8F2AAE4CAF00273D7E /* TileCollectionViewCell.swift */,
@@ -86,6 +92,8 @@
 				175DD79F2AA5090500A5D782 /* AppDelegate.swift */,
 				175DD7A12AA5090500A5D782 /* SceneDelegate.swift */,
 				175DD7A32AA5090500A5D782 /* ViewController.swift */,
+				D1D1E7FC2AB0094200D3B212 /* NumberModel.h */,
+				D1D1E7FD2AB0094200D3B212 /* NumberModel.m */,
 				175DD7B42AA5165100A5D782 /* ImageModel.h */,
 				175DD7B52AA5165100A5D782 /* ImageModel.m */,
 				175DD7A52AA5090500A5D782 /* Main.storyboard */,
@@ -173,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1757CE9C2AAE91A700273D7E /* CollectionViewController.swift in Sources */,
+				D1D1E7FE2AB0094200D3B212 /* NumberModel.m in Sources */,
+				D1D1E7FB2AB005B500D3B212 /* CollectionViewController.swift in Sources */,
 				175DD7A42AA5090500A5D782 /* ViewController.swift in Sources */,
 				175DD7A02AA5090500A5D782 /* AppDelegate.swift in Sources */,
 				175BF0CC2AAEB4C20013ABA6 /* PickerViewController.swift in Sources */,
@@ -183,6 +192,7 @@
 				1757CE902AAE4CAF00273D7E /* TileCollectionViewCell.swift in Sources */,
 				1757CE922AAE4DB300273D7E /* CollectViewController.swift in Sources */,
 				175DD7B82AA52BBD00A5D782 /* MainTableViewController.swift in Sources */,
+				D1A9A9392AB0AB1900C6A816 /* SwitchStepController.swift in Sources */,
 				1757CE8E2AAE4C8500273D7E /* CollectionTableViewCell.swift in Sources */,
 				175DD7B62AA5165100A5D782 /* ImageModel.m in Sources */,
 				1757CE9A2AAE918700273D7E /* CollectionViewCell.swift in Sources */,
